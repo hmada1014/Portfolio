@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="mohammed alkwehe profile" />
+    <title>Mohammed Alkwehe | Full Stack Developer</title>
+
+    <!-- 1. Preconnect للـ domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- 2. Preload خطوط Font Awesome (woff2) -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- 3. Google Fonts (display=swap موجود ✅) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      />
+    </noscript>
+
+    <!-- 4. Font Awesome CSS (non-blocking) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- 5. CSS المحلي -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="/images/mohammed-image.jpg" alt="image" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="mobile-menu-btn"
+          onclick="toggleMenu()"
+          aria-label="mobile-menu-btn"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Available for work
+          </div>
+          <h1>Hi, I'm <span>Mohammed Alkwehe</span></h1>
+          <p class="hero-subtitle">
+            Full Stack Developer specializing in .NET Core, SQL Server, and
+            Modern Web Technologies. I build scalable applications from database
+            to user interface.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/hmada1014"
+              target="_blank"
+              title="github profile"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/m-alkwehe"
+              target="_blank"
+              title="linkedin profile"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:mohammedalkwehe@gmail.com" title="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- Stats -->
+      <section>
+        <div class="stats-grid">
+          <div class="stat-card fade-in">
+            <div class="stat-number">600+</div>
+            <div class="stat-label">Problems Solved</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Learning</div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-number">Full</div>
+            <div class="stat-label">Stack Capable</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="section-header fade-in">
+          <h2>About Me</h2>
+          <p>
+            Passionate developer with a strong foundation in software
+            engineering
+          </p>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text fade-in">
+            <p>
+              I'm a dedicated Full Stack Developer with expertise in building
+              robust applications using C# and .NET ecosystem. My journey
+              started with problem-solving (600+ solved problems) and evolved
+              into creating real-world applications.
+            </p>
+            <p>
+              I specialize in designing database architectures, building RESTful
+              APIs, and creating responsive user interfaces. Whether it's a
+              Windows Forms application or a Web API, I focus on clean code and
+              scalable solutions.
+            </p>
+            <p>
+              Currently expanding my skills in modern frontend technologies
+              while leveraging my strong backend foundation to deliver complete
+              end-to-end solutions.
+            </p>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem">
+              <i class="fas fa-paper-plane"></i> Let's Talk
+            </a>
+          </div>
+          <div class="about-image fade-in">
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <div class="code-content">
+                <span class="keyword">class</span> Developer {<br />
+                &nbsp;&nbsp;<span class="keyword">string</span> name =
+                <span class="string">"Mohammed"</span>;<br />
+                &nbsp;&nbsp;<span class="keyword">string</span> role =
+                <span class="string">"Full Stack"</span>;<br />
+                &nbsp;&nbsp;<span class="keyword">string</span>[] stack = {<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"C#"</span>,
+                <span class="string">".NET Core"</span>,<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"SQL Server"</span
+                >, <span class="string">"JavaScript"</span><br />
+                &nbsp;&nbsp;};<br />
+                &nbsp;&nbsp;<span class="comment">// Always learning...</span
+                ><br />
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="section-header fade-in">
+          <h2>Technical Skills</h2>
+          <p>Technologies I work with to bring ideas to life</p>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">T-SQL</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">.NET Framework</span>
+              <span class="skill-tag">.NET Core</span>
+              <span class="skill-tag">ASP.NET Web API</span>
+              <span class="skill-tag">Entity Framework</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">JSON</span>
+              <span class="skill-tag">AJAX</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-database"></i> Database</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">T-SQL</span>
+              <span class="skill-tag">Stored Procedures</span>
+              <span class="skill-tag">Database Design</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Visual Studio</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Windows</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-brain"></i> Paradigms & Concepts</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Functional Programming</span>
+              <span class="skill-tag">3-Tier Architecture</span>
+              <span class="skill-tag">SOLID Principles</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <div class="section-header fade-in">
+          <h2>Featured Projects</h2>
+          <p>Real-world applications I've built from the ground up</p>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-cogs"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Restaurant Management System</h3>
+              <p>
+                Full-stack restaurant management system built with ASP.NET Core
+                MVC, featuring menu organization, POS cashier, kitchen order
+                tracking, and role-based access control. Implements Repository
+                Pattern and Unit of Work to ensure clean architecture and
+                maintainable code.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>OOP</span>
+              <span>Asp.net core mvc</span>
+              <span>3-Tier</span>
+              <span>SQL Server</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                poster="/images/Restaurant Management System.jpg"
+                preload="none"
+              >
+                <source
+                  src="/videos/Restaurant Management System.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-cogs"></i></div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/hmada1014/Prayer-times"
+                  target="_blank"
+                  title="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://hmada1014.github.io/Prayer-times/"
+                  target="_blank"
+                  title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Prayer times</h3>
+              <p>
+                Interactive prayer times application built with vanilla HTML,
+                CSS, and JavaScript. Fetches real-time prayer data via using
+                Promises and Async/Await, dynamically displays current city,
+                live clock, upcoming prayer auto-detection, and dual
+                Gregorian/Hijri calendar support.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                poster="/images/Prayer-times.jpg"
+                preload="none"
+              >
+                <source src="/videos/Prayer-times.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-cogs"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Code Generator</h3>
+              <p>
+                Automated tool that generates Data Access and Business Logic
+                layers, stored procedures, and triggers. Enhances development
+                efficiency and maintains consistency across projects.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>OOP</span>
+              <span>Windows Form</span>
+              <span>3-Tier</span>
+              <span>SQL Server</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                poster="/images/CodeGenerator.jpg"
+                preload="none"
+              >
+                <source src="/videos/CodeGenerator.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-id-card"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>DVLD System</h3>
+              <p>
+                Comprehensive Driving License Management System with user
+                authentication, role-based permissions, and full license
+                operations including creation, renewal, replacement, detention,
+                and release.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>OOP</span>
+              <span>Windows Form</span>
+              <span>3-Tier</span>
+              <span>SQL Server</span>
+            </div>
+            <div class="project-video">
+              <video controls muted preload="none" poster="/images/DVLD.jpg">
+                <source src="/videos/DVLD.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-calculator"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Calculator</h3>
+              <p>
+                Feature-rich calculator application supporting basic operations
+                with clear entry (CE) and clear all (C) functions. Built with
+                clean OOP principles and intuitive UI design.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>OOP</span>
+              <span>Windows Form</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                preload="none"
+                poster="/images/Calculator.jpg"
+              >
+                <source src="/videos/calculator.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Tic-Tac-Toe Game</h3>
+              <p>
+                Interactive two-player game with turn-based gameplay, draw
+                detection, and winner announcement. Demonstrates event handling
+                and game state management.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>OOP</span>
+              <span>Windows Form</span>
+            </div>
+            <div class="project-video">
+              <video controls muted preload="none" poster="/images/tic-tac.jpg">
+                <source src="/videos/Tic-tac.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-university"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>ATM System</h3>
+              <p>
+                Console-based ATM simulation featuring secure login, cash
+                withdrawal, deposit, balance check, and logout functionality.
+                Implements core banking operations with C++.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C++</span>
+              <span>Console App</span>
+              <span>OOP</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                preload="none"
+                poster="/images/ATM System.jpg"
+              >
+                <source src="/videos/Bank.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-landmark"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Bank Management System</h3>
+              <p>
+                Comprehensive console application for managing client records,
+                transactions, currency exchange, and user accounts. Features
+                robust data persistence and validation.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C++</span>
+              <span>Console App</span>
+              <span>File I/O</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                preload="none"
+                poster="/images/Bank System.jpg"
+              >
+                <source src="/videos/Bank.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-hand-rock"></i></div>
+              <div class="project-links">
+                <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Rock Paper Scissors</h3>
+              <p>
+                Classic game implementation using functional programming
+                concepts. Features round selection, score tracking, and dynamic
+                winner display.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span>C++</span>
+              <span>Functional</span>
+              <span>Console</span>
+            </div>
+            <div class="project-video">
+              <video
+                controls
+                muted
+                preload="none"
+                poster="/images/Rock Paper Scissors.jpg"
+              >
+                <source src="/videos/sps.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <div class="section-header fade-in">
+          <h2>Education & Certifications</h2>
+          <p>My learning journey and professional development</p>
+          <div class="section-line"></div>
+        </div>
+        <div class="education-timeline">
+          <div class="education-item fade-in">
+            <div class="education-content">
+              <h3>Frontend Web Development</h3>
+              <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+              <span class="education-status">Completed</span>
+            </div>
+          </div>
+          <div class="education-item fade-in">
+            <div class="education-content">
+              <h3>RESTful API on .NET Core</h3>
+              <p>Web API development, Entity Framework, JWT Authentication</p>
+              <span class="education-status">Completed</span>
+            </div>
+          </div>
+          <div class="education-item fade-in">
+            <div class="education-content">
+              <h3>Programming Courses</h3>
+              <p>
+                Programming Advices School - C#, OOP, Algorithms, Data
+                Structures
+              </p>
+              <span class="education-status">Completed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="section-header fade-in">
+          <h2>Get In Touch</h2>
+          <p>Have a project in mind? Let's build something amazing together</p>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info fade-in">
+            <h3>Let's Talk</h3>
+            <p>
+              I'm currently available for freelance projects and full-time
+              opportunities. Whether you need a web application, API
+              development, or database design, I'm ready to help.
+            </p>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>mohammedalkwehe@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Available Remote / Worldwide</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/hmada1014</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </div>
+          </div>
+          <div class="contact-form fade-in">
+            <form onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project Inquiry"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p style="color: var(--text-secondary); margin-bottom: 1rem">
+          Building digital experiences with passion and precision
+        </p>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/hmada1014"
+            target="_blank"
+            title="github Account"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/m-alkwehe"
+            target="_blank"
+            title="linkedin Account"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:mohammedalkwehe@gmail.com" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <p class="footer-copy">
+          © 2024 Mohammed Alkwehe. All rights reserved. Built with HTML, CSS &
+          JavaScript.
+        </p>
+      </div>
+    </footer>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
